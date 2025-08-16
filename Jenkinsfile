@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'   // 👈 nombre configurado en Jenkins
-    }
-
     stages {
         stage('Compilar') {
             steps {
