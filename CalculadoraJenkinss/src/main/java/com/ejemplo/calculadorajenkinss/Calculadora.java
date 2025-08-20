@@ -1,4 +1,4 @@
-package com.ejemplo.calculadorajenkins;
+package com.ejemplo.calculadorajenkiss;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,8 +32,7 @@ public class Calculadora {
         if (b == 0) {
             throw new ArithmeticException("No se puede dividir entre cero");
         }
-        // ⚠️ Error a propósito (multiplica en lugar de dividir)
-        double resultado = (double) a * b;
+        double resultado = (double) a * b; // ❌ Bug intencional
         historial.add(resultado);
         return resultado;
     }
